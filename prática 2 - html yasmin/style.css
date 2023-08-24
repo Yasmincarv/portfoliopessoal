@@ -6,29 +6,78 @@
 }
 
 body {
+        /* Define a altura do corpo como 100% da altura visível da janela (viewport) */
         height: 100vh;
-        box-sizing: border-box;
-        background-color: black;
+    
+        /* Cria um gradiente de cores de cima para baixo como plano de fundo */
+        background: linear-gradient(to bottom, #000, #2a0887, #b61ca9);
+    
+        /* Define o tamanho de fundo para cobrir toda a área disponível */
+        background-size: cover;
+    
+        /* Impede a repetição do plano de fundo ao longo dos eixos */
+        background-repeat: no-repeat;
+    
+        /* Fixa o plano de fundo para que ele não role com o conteúdo da página */
+        background-attachment: fixed;
+    
+        /* Remove margens para o corpo */
+        margin: 0;
+    
+        /* Define a cor do texto dentro do corpo como branco */
         color: white;
-}
+    }
 
 .titulo-destaque {
             color: #22d4fd;
 }
 
 .conteudo {
+        /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+        height: auto;
+    
+        /* Define a direção dos elementos filhos como coluna (de cima para baixo) */
+        flex-direction: column;
+    
+        /* Define uma margem ao redor do elemento de 10% */
         margin: 10%;
+    
+        /* Transforma o elemento em um contêiner flexível */
         display: flex;
+    
+        /* Alinha os itens verticalmente no centro do contêiner */
         align-items: center;
+    
+        /* Distribui o espaço restante entre os itens horizontalmente */
         justify-content: space-between;
-}
+    }
 
 .apresentacao-conteudo {
+        /* Define a largura do elemento como 615px */
         width: 615px;
+    
+        /* Transforma o elemento em um contêiner flexível com direção de coluna */
         display: flex;
         flex-direction: column;
+    
+        /* Centraliza verticalmente os elementos dentro do contêiner */
+        justify-content: center;
+    
+        /* Centraliza horizontalmente os elementos dentro do contêiner */
+        align-items: center;
+    
+        /* Centraliza o alinhamento do texto dentro do contêiner */
+        text-align: center;
+    
+        /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+        height: auto;
+    
+        /* Define o espaçamento entre os elementos filhos como 40px */
         gap: 40px;
-}
+    
+        /* Define a ordem do elemento como 2 na ordem de exibição */
+        order: 2;
+    }
 
 .apresentacao-conteudo-titulo {
         font-size: 36px;
@@ -41,26 +90,156 @@ body {
 }
 
 .apresentacao-links {
-        display:flex;
-        justify-content: space-between;
-}
-.botao {
-        background-color: mediumslateblue;
-        color: black;
-        width: 300px;
-        text-align: center;
-        border-radius: 16px;
+        /* Define a largura do elemento como 500px */
+        width: 500px;
+    
+        /* Transforma o elemento em um contêiner flexível com direção de coluna */
+        display: flex;
+        flex-direction: column;
+    
+        /* Centraliza horizontalmente os elementos dentro do contêiner */
+        align-items: center;
+    
+        /* Define o espaçamento entre os elementos filhos como 20px */
+        gap: 20px;
+    }
+
+.botao1 {
+        background-color: #000;
+        align-items: center;
+        color: #b61ca9; /* Cor padrão do Instagram */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid#b61ca9;
+        border-radius: 50px;
         font-size: 24px;
-        padding: 21.5px 0;
+        padding: 15px 0;
         text-decoration: none;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #2a0887);
+        transition: 0.5s;
+    }
+    
+    .botao1:hover::before {
+        left: 100%;
+    }
+    
+    .botao1 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.botao2 {
+        background-color: #000;
+        align-items: center;
+        color: #fff; /* Cor padrão do GitHub */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+
+    
+    .botao2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #333);
+        transition: 0.5s;
+    }
+    
+    .botao2:hover::before {
+        left: 100%;
+    }
+    
+    .botao2 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .botao3 {
+        background-color: #000;
+        color: #0077B5; /* Cor padrão do LinkedIn */
+        width: 500px;
+        height: 80px;
+        align-items: center;
+        text-align: center;
+        border: 2px solid #0077B5;
+        border-radius: 50px;
+        font-size: 36px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #0077B5);
+        transition: 0.5s;
+    }
+    
+    .botao3:hover::before {
+        left: 100%;
+    }
+    
+    .botao3 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 .imagem {
         max-width: 40%;
         width: auto;
         border-radius: 5%;
-        border: 2px solid;color: palevioletred;
+        border: 3px solid;color: palevioletred;
         margin-right: 25px;
 }
 
