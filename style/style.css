@@ -10,7 +10,7 @@ body {
         height: 100vh;
     
         /* Cria um gradiente de cores de cima para baixo como plano de fundo */
-        background: linear-gradient(to bottom, #000, #2a0887, #b61ca9);
+        background: linear-gradient(to bottom, #000, #2a0887, #e606ae);
     
         /* Define o tamanho de fundo para cobrir toda a área disponível */
         background-size: cover;
@@ -43,7 +43,7 @@ body {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 40px; /* Tamanho da fonte aumentado */
         font-weight: 800;
-        color: #b61ca9;
+        color: #e606ae;
         text-decoration: none;
     }
     
@@ -370,7 +370,7 @@ body {
 
         .rodape {
             color: white;
-            background-color: mediumblue;
+            background-color: #040307;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -382,5 +382,6 @@ body {
         }
 
         .rodape a:hover {
-            color: palevioletred;  
+            color: magenta;  
+            text-decoration: none;
         }

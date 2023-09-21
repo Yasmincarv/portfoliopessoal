@@ -10,7 +10,7 @@ body {
         height: 100vh;
     
         /* Cria um gradiente de cores de cima para baixo como plano de fundo */
-        background: linear-gradient(to bottom, #000, #2a0887, #b61ca9);
+        background: linear-gradient(to bottom, #000, #2a0887, #e606ae);
     
         /* Define o tamanho de fundo para cobrir toda a área disponível */
         background-size: cover;
@@ -43,7 +43,7 @@ body {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 36px; /* Tamanho da fonte aumentado */
         font-weight: 800;
-        color: #b61ca9;
+        color: #e606ae;
         text-decoration: none;
     }
 
@@ -104,6 +104,31 @@ body {
         font-family: 'Montserrat', sans-serif;
 }
 
+.apresentacao-conteudo-texto {
+    width: 615px;
+    
+    /* Transforma o elemento em um contêiner flexível com direção de coluna */
+    display: flex;
+    flex-direction: column;
+
+    /* Centraliza verticalmente os elementos dentro do contêiner */
+    justify-content: center;
+
+    /* Centraliza horizontalmente os elementos dentro do contêiner */
+    align-items: center;
+
+    /* Centraliza o alinhamento do texto dentro do contêiner */
+    text-align: center;
+
+    /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+    height: auto;
+
+    /* Define o espaçamento entre os elementos filhos como 40px */
+    gap: 40px;
+
+
+}
+
 .apresentacao-links {
         /* Define a largura do elemento como 500px */
         width: 500px;
@@ -127,7 +152,7 @@ body {
 
         .rodape {
             color: white;
-            background-color: mediumblue;
+            background-color: #040307;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -139,5 +164,6 @@ body {
         }
 
         .rodape a:hover {
-            color: palevioletred;  
+            color: magenta;  
+            text-decoration: none;
         }
