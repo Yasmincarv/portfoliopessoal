@@ -36,7 +36,7 @@ body {
     .cabecalho-menu {
         display: flex;
         justify-content: center; /* Centraliza os elementos dentro do cabeçalho */
-        gap: 100px;
+        gap: 80px;
     }
     
     .cabecalho-menu-links {
