@@ -10,7 +10,7 @@ body {
         height: 100vh;
     
         /* Cria um gradiente de cores de cima para baixo como plano de fundo */
-        background: linear-gradient(to bottom, #000, #2a0887, #b61ca9);
+        background: linear-gradient(to bottom, #000, #2a0887, #e606ae);
     
         /* Define o tamanho de fundo para cobrir toda a área disponível */
         background-size: cover;
@@ -29,21 +29,25 @@ body {
     }
 
     .cabecalho {
-        padding: 2% 0% 0% 15%;
+        text-align: center; /* Centraliza o conteúdo do cabeçalho */
+        padding: 5% 5%; 
     }
-
+    
     .cabecalho-menu {
         display: flex;
+        justify-content: center; /* Centraliza os elementos dentro do cabeçalho */
         gap: 80px;
     }
-
+    
     .cabecalho-menu-links {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        color: #b61ca9;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px; /* Tamanho da fonte aumentado */
+        font-weight: 800;
+        color: #e606ae;
         text-decoration: none;
     }
+    
+    
 
 .titulo-destaque {
             color: #22d4fd;
@@ -260,7 +264,7 @@ body {
     }
 
 .imagem {
-        max-width: 40%;
+        max-width: 35%;
         width: auto;
         border-radius: 5%;
         margin-right: 25px;
@@ -366,7 +370,7 @@ body {
 
         .rodape {
             color: white;
-            background-color: mediumblue;
+            background-color: #040307;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -378,5 +382,6 @@ body {
         }
 
         .rodape a:hover {
-            color: palevioletred;  
+            color: magenta;  
+            text-decoration: none;
         }
